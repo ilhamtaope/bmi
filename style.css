@@ -1,0 +1,127 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  text-decoration: none;
+  /* color #FF4F63 #FFB58A  #360133*/
+}
+body {
+  font-family: "Poppins", Arial, sans-serif;
+}
+
+/* awal navbar */
+.navbar {
+  padding: 1.5rem 7%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+  background-color: white;
+}
+
+.navbar .navbar-logo {
+  background-image: linear-gradient(to left, #ff4f63, #ffb58a);
+  -webkit-background-clip: text;
+  color: transparent;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.navbar .navbar-menu a {
+  background-image: linear-gradient(to left, #ff4f63, #ffb58a);
+  -webkit-background-clip: text;
+  color: transparent;
+  font-size: 1rem;
+  padding-right: 2rem;
+  font-weight: 800;
+}
+/* akhir navbar */
+
+/* awal hero */
+.hero {
+  padding: 1.5rem 7%;
+  margin-top: 3rem;
+  padding-top: 10rem;
+  height: 100vh;
+  background-image: url(/image/hero.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(191, 72, 76, 0.3);
+}
+
+.hero .row {
+  padding: 1rem;
+  height: auto;
+  display: flex;
+  justify-content: space-around;
+  position: relative;
+}
+
+.hero .row .col-1 {
+  align-items: center;
+  background: rgba(246, 101, 104, 0.8);
+  padding: 3rem 5rem;
+  border-radius: 2rem;
+}
+.hero .row .col-1 h1 {
+  font-size: 2rem;
+  color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.hero .row .col-1 ul li {
+  display: block;
+  color: white;
+  padding-top: 0.5rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.hero .row .col-1 ul li input {
+  border: none;
+  border-bottom: 1px solid rgb(255, 255, 255);
+  background: transparent;
+  width: 100%;
+}
+.hero .row .col-1 ul li input::placeholder {
+  color: #585656;
+  font-size: 0.7rem;
+}
+.hero .row .col-1 button {
+  margin: 2rem 1rem;
+
+  padding: 1rem;
+  border: none;
+  border-radius: 1rem;
+  background-color: white;
+  color: #ff4f63;
+  justify-content: center;
+  align-items: center;
+}
+.hero .row .col-2 {
+  align-items: center;
+  background: rgba(246, 101, 104, 0.8);
+  padding: 3rem 5rem;
+  border-radius: 2rem;
+  font-size: 1.5rem;
+  color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+  margin-bottom: 2rem;
+  margin-left: 1rem;
+}
